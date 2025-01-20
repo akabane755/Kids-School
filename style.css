@@ -108,6 +108,110 @@ width: 197px;
 height: 50px;
 margin-top: 24px;
 }
+.curp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 81vw;
+    text-align: center;
+    margin-top:60px;
+}
+.cur{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cur .cardp{
+display: flex;
+align-items: center;
+justify-content: center;
+gap:35px;
+margin-top:80px;
+width: 100%;
+}
+.cur .cardp h1{
+    font-size: 1.5rem;
+font-weight: 700;
+margin:0px;
+}
+.cur .cardp p{
+    font-size: 1rem;
+font-weight: 500;
+margin:0px;
+color: rgb(128, 128, 128);
+width:80%;
+}
+.cur .cardp subscript{
+    font-size: 1rem;
+font-weight: 700;
+margin:0px;
+
+}
+.LR{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+        margin-top:80px;
+        max-width: 150px;
+}
+.left img,.right img{
+    border-radius: 30px;
+    
+/* Orange */
+background: rgb(254, 163, 1);
+padding:15px;
+}
+
+.card1{
+    box-sizing: border-box;
+    border: 0.94px solid rgb(222, 245, 255);
+    border-radius: 18.86px;
+    
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+    max-width: 489px;  
+    height: 476.78px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+}
+.card2{
+    box-sizing: border-box;
+    border: 0.94px solid rgb(255, 244, 220);
+border-radius: 18.86px;
+box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+    max-width: 489px;  
+    height: 476.78px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+}
+.card3{
+    box-sizing: border-box;
+    border: 0.94px solid rgb(242, 232, 255);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+    max-width: 489px;  
+    height: 476.78px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+}
+.card1, .card2, .card3 {
+    max-width: calc(33.33% - 35px); 
+   
+   
+}
 @media screen and (max-width:576px) {
     nav{
         display: none;
@@ -142,6 +246,18 @@ margin-top: 24px;
     .banner p{
         font-size:14px;
     }
+   .cur .cardp{
+        display: flex;
+        flex-direction: column;
+    }
+    .left,.right{
+        display: none;
+    }
+    .card1, .card2, .card3 {
+        max-width: 90vw; 
+       
+       
+    }
 }
 @media screen and (min-width:576px) and (max-width:992px){
     nav{
@@ -174,4 +290,10 @@ width: 100vw;
         
         margin-top:20px;
     }
+    .cur .cardp{
+        display: flex;
+        flex-direction: column;
+    }
+    .card1, .card2, .card3 {
+        max-width: 90vw; 
 }
