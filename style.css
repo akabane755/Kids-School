@@ -116,6 +116,10 @@ margin-top: 24px;
 main{
     background: url(assets/bg.png),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
 }
+.stories p,.stories button,.f1 p{
+    font-family: raleway;
+}
+
 .curp{
     display: flex;
     flex-direction: column;
