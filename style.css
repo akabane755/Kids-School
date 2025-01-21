@@ -17,14 +17,18 @@ header{
 }
 .headp{
     
-   
-    width: 80vw;
+    max-width: 80vw;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
     width:100%;
 }
-
+.fp{
+    display: flex;
+    justify-content: space-between;
+    max-width: 80vw;
+}
 nav ul{
     max-width: 516px;
     display: flex;
@@ -257,7 +261,7 @@ width: 100%;
     font-size: 1.5rem;
     font-weight: 700;
    padding:20px;
-    margin-top: 36px;
+    margin-top: 1.3vw;
     margin-bottom:0px;
     width: 80%;
 }
@@ -266,9 +270,13 @@ width: 100%;
     font-weight: 500;
     padding:20px;
     color: rgb(102, 102, 102);
-    margin-top: 10px;
+    margin-top: 1.3vw;
     margin-bottom: 10px;
     width: 80%;
+    height:20%;
+}
+.st2>div{
+    height:50%;
 }
 .stories img{
     border-radius: 16px 16px 0px 0px;
@@ -325,6 +333,7 @@ font-weight: 700;
 margin-top: 25px;
 margin-bottom: 35px;
 width: 90%;
+height:20%;
 }
 .st4 button{
     color:white;
@@ -336,6 +345,76 @@ border:none;
 margin-top:-5%;
 margin-left:-3vw;
 
+}
+.btn button{
+    border-radius: 12px;
+background: rgb(17, 17, 17);
+color:white;
+width: 197px;
+height: 50px;
+font-size: 1.25rem;
+font-weight: 700;
+margin-top:80px;
+margin-bottom:60px;
+border: none;
+}
+.f2{
+    display: flex;
+}
+.f1 p{
+    max-width: 400px;
+    margin-top:35px;
+    font-size:1.25rem;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: rgb(1, 172, 253);
+}
+.fp{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80vw;
+}
+.f2 subscript{
+    font-size: 2.2rem;
+font-weight: 700;
+}
+.f3 a {
+    color:white;
+}
+.f3 p{
+    font-size: 1.5rem;
+font-weight: 700;
+}
+.f3 ul{
+    margin-top:32px;
+    font-size:1.25rem;
+    
+}
+.f3 ul li {
+    margin-top:20px;
+}
+.f5{
+    margin-top:24px;
+    gap:10px;
+}
+.f4 p{
+    font-size: 1.6rem;
+font-weight: 700;
+}
+.fp{
+    margin-top:124px;
+    margin-bottom:124px;
 }
 @media screen and (max-width:576px) {
     nav{
@@ -383,6 +462,12 @@ margin-left:-3vw;
        
        
     }
+    .fp{
+        display: flex;
+        flex-direction: column;
+        gap:50px;
+        align-items: start;
+    }
     .st2{
         display: none;
     }
@@ -394,9 +479,16 @@ margin-left:-3vw;
     }
     
 }
+
 @media screen and (min-width:576px) and (max-width:992px){
     nav{
         display: none;
+    }
+    .fp{
+        display: flex;
+        flex-direction: column;
+        gap:50px;
+        align-items: start;
     }
     .head2 button{
         display: none;
